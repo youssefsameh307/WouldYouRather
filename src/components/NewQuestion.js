@@ -40,7 +40,7 @@ class NewQuestion extends Component{
     }
     render(){
         if (this.state.toHome===true){
-            return <Redirect to='/WouldYouRather' />
+            return <Redirect to='/' />
         }
         const {authedUser} = this.props
         const {opt1,opt2} = this.state
