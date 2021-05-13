@@ -23,10 +23,10 @@ class App extends Component {
         {this.props.loggedin &&(<Nav />)}
         
           {!this.props.loggedin &&(<Sign/>)}
-          {this.props.loggedin &&(<Route path='/' exact component={QuestionList} />)}
-          {this.props.loggedin &&(<Route path='/add'  component={NewQuestion} />)}
-          {this.props.loggedin &&(<Route path='/leaderboard'  component={DashBoard} />)}
-          {this.props.loggedin &&(<Route path='/questions/:Qid'  component={QuestionView} />)}
+          {this.props.loggedin &&(<Route path='/WouldYouRather/' exact component={QuestionList} />)}
+          {this.props.loggedin &&(<Route path='/WouldYouRather/add'  component={NewQuestion} />)}
+          {this.props.loggedin &&(<Route path='/WouldYouRather/leaderboard'  component={DashBoard} />)}
+          {this.props.loggedin &&(<Route path='/WouldYouRather/questions/:Qid'  component={QuestionView} />)}
         </div>
       </Router>
     )
