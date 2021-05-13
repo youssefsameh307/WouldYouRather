@@ -22,7 +22,7 @@ class Question extends Component{
         const percent2 = (votesone+votestwo===0?0:100-percent1).toFixed(2)
 
         return(
-            <Link to={`/questions/${question.id}`}>
+            <Link to={`/WouldYouRather/questions/${question.id}`}>
             
             <div className="tweet">
               <div className="flex-none w-40 relative grid grid-flow-col grid-rows-3 grid-cols-1 gap-4">
